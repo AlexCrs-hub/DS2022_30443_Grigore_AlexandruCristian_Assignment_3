@@ -1,0 +1,19 @@
+.chatbox{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 100px;
+    background-color: burlywood;
+    overflow-y: scroll;
+    .msgblob{
+        width: 100px;
+        height: 20px;
+        background-color: blue;
+    }
+    .typetxt{
+        align-self: flex-end;
+    }
+    .close{
+        align-self: flex-end;
+    }
+}

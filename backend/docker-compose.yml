@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+  assignment1:
+    image: assignment1
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
+  mysqldb:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: RasenganSage12
+      MYSQL_DATABASE: project
+    ports:
+      - 33006:33006
+    volumes: 
+      - db-config:/etc/mysql
+      - db-data:/var/lib/mysql
+      - ./db/backup/files/:/data_backup/data
+
+volumes: 
+  db-config:
+  db-data:

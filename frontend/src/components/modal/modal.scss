@@ -1,0 +1,34 @@
+.modal{
+    z-index: 999;
+    display :flex;
+    float: inline-end;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    justify-items: left;
+    background-color: #615d5d;
+    width: 500px;
+    margin-left: 10%;
+    border-radius: 10px;
+    input{
+        border-radius: 5px;
+        margin-left: 5%;
+        width: 15%;
+    }
+    input[type="checkbox"]{
+        padding:0%;
+        margin-left: 5%;
+        margin-left: -1%;
+    }
+    label{
+        margin-top: 10px;
+        text-align: left;
+        margin-left: 5%;
+    }
+    button{
+        margin-left: 5%;
+        width: fit-content;
+        margin-top: 10px;
+        margin-bottom: 2%;
+    }
+}

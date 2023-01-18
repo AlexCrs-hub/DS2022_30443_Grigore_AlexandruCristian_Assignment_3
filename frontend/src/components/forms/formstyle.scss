@@ -1,0 +1,24 @@
+.formcss {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    align-items: left;
+    justify-content: left;
+    justify-items: left;
+    input{
+        width: 15%;
+    }
+    input[type="checkbox"]{
+        margin-left: -80px;
+        padding:0%;
+    }
+    label{
+        margin-top: 10px;
+        text-align: left;
+    }
+    button{
+        width: fit-content;
+        margin-top: 10px;
+    }
+}
